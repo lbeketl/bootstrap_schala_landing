@@ -6,7 +6,7 @@ $(document).ready( () => {
         } else {
             $(".navbar").removeClass("navbar-shrink");
         }
-    })
+    });
     /*------------- Video Popup --------------*/
     const videoSrc = $("#player-1").attr("src");
     $(".video-play-btn, .video-popup-close").on("click", () => {
@@ -19,5 +19,24 @@ $(document).ready( () => {
                 $("#player-1").attr("src", videoSrc);
             }
         }
-    })
+    });
+
+    /*------------- Features Carousel --------------*/
+    $('.features-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        responsiveClass:true,
+        autoplay:true,
+        responsive:{
+            0:{
+                items:1,
+            },
+            600:{
+                items:2,
+            },
+            1000:{
+                items:3,
+            }
+        }
+    });
 });
