@@ -96,4 +96,9 @@ $(document).ready( () => {
             }
         }
     });
+
+    /*------------- ScrollIt --------------*/
+    $.scrollIt({
+        topOffset: -50
+    });
 });
